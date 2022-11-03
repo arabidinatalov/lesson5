@@ -2,7 +2,13 @@ package com.company;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        String name = "Hello World";
+        Scanner scanner = new Scanner(System.in);
+        Triangle triangle = new Triangle();
+        triangle.a = scanner.nextInt();
+        triangle.b = scanner.nextInt();
+        triangle.c = scanner.nextInt();
+        double o = triangle.z();
+        System.out.println(o);
     }
 }
 
