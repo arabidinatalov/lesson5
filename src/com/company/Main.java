@@ -7,7 +7,7 @@ public class Main {
         triangle.a = scanner.nextInt();
         triangle.b = scanner.nextInt();
         triangle.c = scanner.nextInt();
-        double o = triangle.z();
+        double o = triangle.area();
         System.out.println(o);
     }
 }
