@@ -1,17 +1,9 @@
 package com.company;
-import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Triangle triangle = new Triangle();
-        triangle.a = scanner.nextInt();
-        triangle.b = scanner.nextInt();
-        triangle.c = scanner.nextInt();
-        double o = triangle.area();
-        System.out.println(o);
+      Course course = new Course("Java", "rahim agai", new Student("arabidin", 18, 34));
+        System.out.println(course.getName() + " " + course.getInstructor() + " " + course.getStudent().getName()+" "
+                +course.getStudent().getAge()+ " " +course.getStudent().getWords());
     }
 }
-
-
-
-
